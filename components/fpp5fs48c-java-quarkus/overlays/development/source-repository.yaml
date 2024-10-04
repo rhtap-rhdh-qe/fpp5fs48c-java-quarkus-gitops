@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: fpp5fs48c-java-quarkus-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/fpp5fs48c-java-quarkus

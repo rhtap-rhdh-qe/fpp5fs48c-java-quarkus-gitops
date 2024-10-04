@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: fpp5fs48c-java-quarkus-gitops
+  description: This is GitOps manifest for fpp5fs48c-java-quarkus   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: fpp5fs48c-java-quarkus
+    janus-idp.io/tekton: fpp5fs48c-java-quarkus
+    backstage.io/kubernetes-id: fpp5fs48c-java-quarkus 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:fpp5fs48c-java-quarkus
